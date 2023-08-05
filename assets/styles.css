@@ -1,0 +1,35 @@
+/* NAVBAR MEDIA */
+@media (min-width: 768px) {
+    .navbar-brand.abs {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+.dropdown-item:hover {
+    background-color: #d395ff !important;
+    color: black !important;
+}
+
+#nav {
+    background-color: #241b35;
+}
+
+.menu-item {
+    border-radius: 20px;
+    
+}
+
+.menu-item:hover {
+    background-color: #cb80ff;
+    border-radius: 20px;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif!important;
+    font-family: 'Fira Sans', sans-serif!important;
+    font-family: 'Poppins', sans-serif!important;
+}
