@@ -13,6 +13,9 @@
     background-color: #d395ff !important;
     color: black !important;
 }
+.dropdown-item{
+    color: #ffc7ff!important;
+}
 
 #nav {
     background-color: #241b35;
@@ -20,6 +23,7 @@
 
 .menu-item {
     border-radius: 20px;
+    color: #ffc7ff!important;
     
 }
 
@@ -32,4 +36,10 @@ body {
     font-family: 'Bebas Neue', sans-serif!important;
     font-family: 'Fira Sans', sans-serif!important;
     font-family: 'Poppins', sans-serif!important;
+    background-color: #241b35!important;
+    /* background-color: #ffc7ff!important; */
+}
+
+.banner-txt{
+    color: chartreuse;
 }
