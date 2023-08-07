@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UBER</title>
+    <!-- Css Linking -->
     <link rel="stylesheet" href="./assets/styles.css">
+    <!-- Js Linking -->
+    <script src="./particals.js"></script>
+
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@700&family=Poppins:ital@1&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -71,19 +80,85 @@
         </nav>
     </section>
 
-    <section class="HERO">
+    <section class="HERO mt-5">
         <div class="container ">
-            <div class="row border-1 border-light">
+            <div class="row border-1 flex-column-reverse flex-md-row align-items-center">
                 <div class="col-md-4">
-                    <h2 class="banner-txt">Always The Ride You Want</h2>
+                    <h1 class="banner-txt mt-5 ">Always The Ride You Want</h1>
+                    <h6 class="banner-txt">Request a ride, hop in, and relax.</h6><br>
+                    <button type="button" class="btn btn-warning"><b>REQUEST A RIDE</b></button>
                 </div>
                 <div class="col-md-8">
                     <img src="./assets/images/IMG-1.png" alt="hero img" width="100%">
                 </div>
             </div>
         </div>
-
     </section>
+
+    <section class="Content mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <img src="./assets/images/Why use uber.png" alt="why use uber img" width="100%">
+                </div>
+                <div class="col-md-4">
+                    <h1 class="banner-txt mt-5 text-lg-end">Why use the Uber app?</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sub-contents mt-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <img src="./assets/images/Time_img.svg" alt="time_img" width="20%">
+                    <h6 class="banner-txt">Rides on demand</h6>
+                    <p class="text-light">Request a ride at any time and on any day of the year.</p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <img src="./assets/images/debit_img.svg" alt="debitcard_img" width="28%">
+                    <h6 class="banner-txt">Budget-friendly options</h6>
+                    <p class="text-light">Compare prices on every kind of ride, from daily commutes to special evenings
+                        out.</p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <img src="./assets/images/location_img.svg" alt="location_img" width="34%">
+                    <h6 class="banner-txt">An easy way to get around</h6>
+                    <p class="text-light">Tap and let your driver take you where you want to go.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ways to ride mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="banner-txt mb-4">Ways to ride in the area</h1>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link bg-transparent" id="popular-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Popular</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link bg-transparent" id="economy-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Economy</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show text-light active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">Popular</div>
+                        <div class="tab-pane fade text-light" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">Economy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

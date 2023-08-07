@@ -1,0 +1,178 @@
+body {
+    background-color: #0F1626 !important;
+}
+
+#login-img {
+    border-radius: 7%;
+}
+
+#login-txt {
+    font-family: 'Russo One', sans-serif;
+}
+
+
+#vect-1 {
+    margin-top: 22em;
+}
+
+#vect-2 {
+    margin-top: 22em;
+}
+
+/*tooltip Box*/
+.con-tooltip {
+
+    position: relative;
+    border-radius: 9px;
+    padding: 2px 2px;
+    margin: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+
+}
+
+.bottom:hover {
+    transform: translateY(0px);
+}
+
+/*tooltip */
+.tooltip {
+    visibility: hidden;
+    z-index: 1;
+    opacity: .40;
+    width: 100%;
+    padding: 0px;
+    background: #FEC100;
+    color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 10px;
+    font: 16px;
+    transform: translateY(9px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+}
+
+
+/* tooltip  after*/
+.tooltip::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12.5px 0 12.5px;
+    border-color: #FEC100 transparent transparent transparent;
+    position: absolute;
+    left: 40%;
+
+}
+
+.con-tooltip:hover .tooltip {
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: .3s linear;
+    animation: odsoky 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes odsoky {
+    0% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
+
+}
+
+/*bottom*/
+
+.bottom .tooltip {
+    top: 115%;
+    left: -2%;
+}
+
+.bottom .tooltip::after {
+    top: -17%;
+    left: 40%;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 991px) {
+
+    #vect-1 {
+        margin-top: 3em;
+        margin-bottom: 1em;
+    }
+
+    #vect-2 {
+        margin-top: 1em;
+    }
+}
+
+/* ============
+    Particles
+===============*/
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    background-color: #32384000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: 5em;
+    text-align: left;
+    text-indent: 9px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
