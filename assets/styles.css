@@ -21,7 +21,9 @@
 #nav {
     background-color: #363c4e;
 }
-
+#mob-logo{
+    margin-left: -2em;
+}
 .menu-item {
     border-radius: 20px;
     color: #FEC100 !important;
@@ -35,11 +37,9 @@
 }
 
 body {
-    font-family: 'Bebas Neue', sans-serif !important;
-    font-family: 'Fira Sans', sans-serif !important;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif!important;
+    font-size: 15px!important;
     background-color: #0F1626 !important;
-    /* background-color: #ffc7ff!important; */
 }
 
 .banner-txt {
@@ -52,10 +52,41 @@ body {
 
 }
 
-#popular-tab:focus,#economy-tab:focus {
-    border-bottom: #FEC100 solid 5px;
+#popular-bar {
+    background-color: #FEC100;
+    position: absolute;
+    margin-top: -0.4em;
+    margin-left: 0.9em;
+    width: 5.5em;
+}
+
+#economy-bar {
+    background-color: #FEC100;
+    position: absolute;
+    margin-top: -0.4em;
+    margin-left: 7.2em;
+    width: 5.5em;
 }
 
 #economy-tab {
     color: white;
+}
+
+#next {
+    height: 10px;
+    margin-top: 4.5em;
+
+}
+
+.ways-to-ride  i {
+    font-size: xx-large;
+}
+
+#prev {
+    height: 10px;
+    margin-top: 4.5em;
+
+}
+footer i,.foot{
+color: #FEC100;
 }

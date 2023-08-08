@@ -19,12 +19,13 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@700&family=Poppins:ital@1&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <!-- fontawsomre -->
+    <script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
+    <!-- body font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,11 +38,12 @@
                         <!-- hidden spacer to center brand on mobile --></span>
                     <a id="pic" class="navbar-brand d-none d-lg-inline-block" href="#"><img id="pic"
                             src="assets/images/UBER-Logo.png" alt="logo" width="20%"></a>
-                    <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                        <img src="assets/images/UBER-Logo.png" alt="logo" width="20%">
+                    <!-- mobile logo -->
+                    <a class="navbar-brand-two d-lg-none d-inline-block mt-2" href="#" id="mob-logo">
+                        <img src="assets/images/UBER-Logo.png" alt="logo" width="30%">
                     </a>
                     <div class="w-100 text-right">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler bg-warning mt-sm-2" type="button" data-bs-toggle="collapse"
                             data-bs-target="#myNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -50,13 +52,10 @@
                 <div class="collapse navbar-collapse text-right" id="myNavbar">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">HOME</a>
+                            <a href="#" class="nav-link m-2 menu-item ps-2">HOME</a>
                         </li>
-                        <!-- <li class="nav-item">
-                        <a href="#" class="nav-link text-light m-2 menu-item">LOGIN</a>
-                    </li> -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle m-2 menu-item" href="#" role="button"
+                            <a class="nav-link dropdown-toggle m-2 menu-item ps-2" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false" id="login">
                                 LOGIN
                             </a>
@@ -65,14 +64,11 @@
                                 <li><a class="dropdown-item" href="#">Sign in to Ride</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item">
-                        <a href="#" class="nav-link text-light m-2 menu-item">DRIVER LOGIN</a>
-                    </li> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">LOGOUT</a>
+                            <a href="#" class="nav-link m-2 menu-item ps-2">LOGOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link m-2 menu-item">ADMIN</a>
+                            <a href="#" class="nav-link m-2 menu-item ps-2">ADMIN</a>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +81,7 @@
             <div class="row border-1 flex-column-reverse flex-md-row align-items-center">
                 <div class="col-md-4">
                     <h1 class="banner-txt mt-5 ">Always The Ride You Want</h1>
-                    <h6 class="banner-txt">Request a ride, hop in, and relax.</h6><br>
+                    <h5 class="banner-txt">Request a ride, hop in, and relax.</h5><br>
                     <button type="button" class="btn btn-warning"><b>REQUEST A RIDE</b></button>
                 </div>
                 <div class="col-md-8">
@@ -131,12 +127,12 @@
         </div>
     </section>
 
-    <section class="ways to ride mt-5">
+    <section class="ways-to-ride mt-5 mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="banner-txt mb-4">Ways to ride in the area</h1>
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link bg-transparent" id="popular-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -149,16 +145,279 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
+                        <!-- Popular Tab -->
                         <div class="tab-pane fade show text-light active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">Popular</div>
-                        <div class="tab-pane fade text-light" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">Economy</div>
+                            aria-labelledby="pills-home-tab">
+                            <div class="row border-1 border-top border-light position-relative">
+                                <div class="card p-1" id="popular-bar"></div>
+                                <div class="col-md-4 mt-4 d-none d-sm-block d-sm-none d-md-block">
+                                    <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                    <h6 class="banner-txt">Sedan Intercity
+                                    </h6>
+                                    <p class="text-light">Outstation rides in comfortable sedans</p>
+                                </div>
+                                <div class="col-md-4 mt-4 d-none d-sm-block d-sm-none d-md-block">
+                                    <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                    <h6 class="banner-txt">Go Intercity
+                                    </h6>
+                                    <p class="text-light">Affordable outstation rides in compact cars</p>
+                                </div>
+                                <!-- Popular Content Carousel -->
+                                <div id="carouselExampleControls"
+                                    class="mt-5 carousel slide px-4 d-md-none d-lg-none d-xl-none d-xxl-none"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="col-md-4 text-center">
+                                                <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                                <h6 class="banner-txt">Sedan Intercity
+                                                </h6>
+                                                <p class="text-light">Outstation rides in comfortable sedans</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-4 text-center">
+                                                <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                                <h6 class="banner-txt">Go Intercity
+                                                </h6>
+                                                <p class="text-light">Affordable outstation rides in compact cars</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="" aria-hidden="true"><i class="fa-solid fa-sort-up fa-rotate-270"
+                                                style="color: #fec100;"></i></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="" aria-hidden="true"><i class="fa-solid fa-sort-up fa-rotate-90"
+                                                style="color: #fec100;"></i></span>
+
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Economy Tab -->
+                        <div class="tab-pane fade text-light mb-1" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="row border-1 border-top border-light position-relative">
+                                <div class="card p-1" id="economy-bar"></div>
+                                <div class="col-md-4 mt-5 d-none d-sm-block d-sm-none d-md-block">
+                                    <img src="./assets/images/3d-sports-bike-img.png" alt="bike_img" width="50%">
+                                    <h6 class="banner-txt mt-3">Uber Moto
+                                    </h6>
+                                    <p class="text-light">Affordable, motorcycle rides</p>
+                                </div>
+                                <div class="col-md-4 mt-4 d-none d-sm-block d-sm-none d-md-block">
+                                    <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                    <h6 class="banner-txt">Uber Go
+                                    </h6>
+                                    <p class="text-light">Affordable, compact rides</p>
+                                </div>
+                                <div class="col-md-4 mt-4 d-none d-sm-block d-sm-none d-md-block">
+                                    <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                    <h6 class="banner-txt">Uber Premier
+                                    </h6>
+                                    <p class="text-light">Comfortable sedans, top-quality drivers</p>
+                                </div>
+                                <!--Economy Content Carousel -->
+                                <div id="carouselExampleInterval"
+                                    class="mt-5 carousel slide px-4 d-md-none d-lg-none d-xl-none d-xxl-none"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active" data-bs-interval="10000">
+                                            <div class="col-md-4 text-center">
+                                                <img src="./assets/images/3d-sports-bike-img.png" alt="bike_img"
+                                                    width="60%">
+                                                <h6 class="banner-txt mt-3">Uber Moto
+                                                </h6>
+                                                <p class="text-light">Affordable, motorcycle rides</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="2000">
+                                            <div class="col-md-4 text-center">
+                                                <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                                <h6 class="banner-txt">Uber Go
+                                                </h6>
+                                                <p class="text-light">Affordable, compact rides</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-4 text-center">
+                                                <img src="./assets/images/3d-car.png" alt="Car_img" width="80%">
+                                                <h6 class="banner-txt">Uber Premier
+                                                </h6>
+                                                <p class="text-light">Comfortable top-quality sedans</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" id="prev" type="button"
+                                        data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                        <span class="" aria-hidden="true"><i class="fa-solid fa-sort-up fa-rotate-270"
+                                                style="color: #fec100;"></i></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" id="next" type="button"
+                                        data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                        <span class="" aria-hidden="true"><i class="fa-solid fa-sort-up fa-rotate-90"
+                                                style="color: #fec100;"></i></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="footer">
+        <footer>
+
+            <div class="container-fluid p-0">
+
+                <footer class="text-center text-lg-start text-white" style="background-color: #363c4e">
+                    <!-- Section: Social media -->
+                    <section class="d-flex justify-content-between p-4" style="background-color:#1e2436">
+                        <!-- Left -->
+                        <div class="me-5">
+                            <span>Get connected with <img id=""
+                                src="assets/images/UBER-Logo.png" alt="logo" width="10%"> on social networks:</span>
+                        </div>
+                        <!-- Left -->
+
+                        <!-- Right -->
+                        <div>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <!-- Right -->
+                    </section>
+                    <!-- Section: Social media -->
+
+                    <!-- Section: Links  -->
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+                            <!-- Grid row -->
+                            <div class="row mt-3">
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Content -->
+                                    <h6 class="text-uppercase banner-txt">Company</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #fec100; height: 2px" />
+                                    <p>
+                                        <a href="#!" class="text-white">About us</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Investors</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Blog</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Careers
+
+                                        </a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase banner-txt ">Products</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #fec100; height: 2px" />
+                                    <p>
+                                        <a href="#!" class="text-white">
+                                            Ride</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Drive</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Deliver</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Uber for Business</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase banner-txt ">Global</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color: #fec100; height: 2px" />
+                                    <p>
+                                        <a href="#!" class="text-white">Safety</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Diversity and Inclusion</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Sustainability</a>
+                                    </p>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase banner-txt ">Travel</h6>
+                                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                        style="width: 60px; background-color:#fec100; height: 2px" />
+                                    <p>
+                                        <a href="#!" class="text-white">Airports</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-white">Cities</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+                            </div>
+                            <!-- Grid row -->
+                        </div>
+                    </section>
+                    <!-- Section: Links  -->
+
+                    <!-- Copyright -->
+                    <section class="foot">
+                        <div class="text-center p-3" style="background-color: #1e2436">
+                            © 2020 Copyright:
+                            <a class="text-white" href="">Uber.com</a>
+                        </div>
+                    </section>
+                    <!-- Copyright -->
+                </footer>
+                <!-- Footer -->
+            </div>
+            <!-- End of .container -->
+        </footer>
+    </section>
 </body>
 
 </html>
