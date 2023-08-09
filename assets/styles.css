@@ -90,3 +90,9 @@ body {
 footer i,.foot{
 color: #FEC100;
 }
+
+@media (max-width:767px){
+    #foot-logo{
+        width: 60px;
+    }
+}
