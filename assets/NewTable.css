@@ -1,0 +1,29 @@
+#headingTwo {
+    margin-top: -2em;
+    z-index: 0;
+}
+
+.dwn-arow {
+    width: 1em;
+    z-index: 1;
+}
+
+#accordionExample {
+    margin-top: -30px!important;
+}
+
+@media (max-width:991px) {
+    #headingTwo {
+        margin-top: -1.5em;
+        z-index: 0;
+    }
+
+    .dwn-arow {
+        width: 1em;
+        z-index: 1;
+    }
+
+    .txt-small .col-3 {
+        font-size: 10px !important;
+    }
+}

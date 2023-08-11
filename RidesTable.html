@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login With Uber</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/RidesTable.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <!-- fontawsomre -->
+    <script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="sky">
+        <div class="cloudPane">
+            <div class="stars">
+                <!-- particles.js container -->
+                <div id="particles-js"></div> <!-- stats - count particles -->
+                <div class="star" id="star1"></div>
+                <div class="star"></div>
+                <div class="star" id="star2"></div>
+                <div class="star"></div>
+                <div class="star" id="star3"></div>
+                <div class="star"></div>
+                <div class="star" id="star4"></div>
+                <div class="star"></div>
+                <div class="star" id="star5"></div>
+                <div class="star"></div>
+                <div class="star" id="star6"></div>
+                <div class="star"></div>
+                <div class="star" id="star7"></div>
+                <div class="star"></div>
+                <div class="star" id="star8"></div>
+                <div class="star"></div>
+                <div class="star" id="star9"></div>
+                <div class="star"></div>
+                <div class="star" id="star10"></div>
+                <div class="star"></div>
+                <div class="star" id="star11"></div>
+                <div class="star"></div>
+            </div>
+
+            <div class="bigCloud" id="cloud1">
+                <div class="largeCircle" id="circ1">
+
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+            <div class="bigCloud" id="cloud2">
+                <div class="largeCircle" id="circ1">
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+
+            <div class="bigCloud" id="cloud3">
+                <div class="largeCircle" id="circ1">
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+
+            <div class="bigCloud" id="cloud4">
+                <div class="largeCircle" id="circ1">
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+
+            <div class="bigCloud" id="cloud5">
+                <div class="largeCircle" id="circ1">
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+
+            <div class="bigCloud" id="cloud6">
+                <div class="largeCircle" id="circ1">
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+
+            <div class="bigCloud" id="cloud7">
+                <div class="largeCircle" id="circ1">
+                    <div class="largeCircle" id="circ1shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ2">
+                    <div class="middleCircle" id="circ2shadow"></div>
+                </div>
+                <div class="middleCircle" id="circ3">
+                    <div class="middleCircle" id="circ3shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ4"></div>
+                <div class="smallCircle" id="circ5">
+                    <div class="smallCircle" id="circ5shadow"></div>
+                </div>
+                <div class="smallCircle" id="circ6">
+                    <div class="smallCircle" id="circ6shadow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rides">
+        <div class="container">
+            <div class="row mt-5 p-3">
+                <table class="table table-dark table-hover table-responsive text-center">
+                    <thead>
+                        <tr class="">
+                            <h3>
+                                <button class="w-100 fs-6 d-flex rounded-3 text-center p-2 border-0 dwn-content-top"
+                                    type="text" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="col-3"><b>DATE</b></div>
+                                    <div class="col-3"><b>TIME</b></div>
+                                    <div class="col-3"><b>USER</b></div>
+                                    <div class="col-3"><b>PICKUP</b></div>
+                                </button>
+                            </h3>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item text-center">
+                    <div class="bg-color">
+                        <button class="w-100 fs-6 d-flex text-center border-0 bg-transparent txt-small py-2"
+                            type="text">
+                            <div class="col-3"><span class="ms-4">21/09/2023</span></div>
+                            <div class="col-3"><span class="ms-3">01:30pm</span></div>
+                            <div class="col-3">Harsha</div>
+                            <div class="col-3"><span class="me-4">Sennanur</span></div>
+                        </button>
+                        <h2 class="accordion-header p-2 p-lg-3" id="headingTwo">
+                            <button class="collapsed p-0 bg-transparent border-0 dwn-arow" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo"><i
+                                    class="fa-solid fa-caret-down fa-bounce position-absolute aro"
+                                    style="color: #ffffff;"></i>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseTwo" class="accordion-collapse bg-success collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body px-0 pt-3 pb-0">
+                            <button class="w-100 fs-6 d-flex text-center border-0 txt-small pt-1 dwn-content-top" type="text">
+                                <div class="col-3"><b class="ms-4">DRIVER</b></div>
+                                <div class="col-3"><b class="ms-3">CAR NO</b></div>
+                                <div class="col-3"><b>DESTINATION</b></div>
+                                <div class="col-3"><b class="me-4">STATUS</b></div>
+                            </button>
+                            <button class="w-100 fs-6 d-flex text-center border-0 txt-small pb-1 dwn-content" type="text">
+                                <div class="col-3"><span class="ms-4">David</span></div>
+                                <div class="col-3"><span class="ms-3">TN37BM2002</span></div>
+                                <div class="col-3">Ooty</div>
+                                <div class="col-3"><span class="me-3">Accepted <i
+                                            class="fa-regular fa-circle-check fa-fade"
+                                            style="color: #00e650;"></i></span></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- row-2 -->
+                <div class="accordion-item text-center">
+                    <div class="bg-color">
+                        <button class="w-100 fs-6 d-flex text-center border-0 bg-transparent txt-small py-2"
+                            type="text">
+                            <div class="col-3"><span class="ms-4">04/02/2023</span></div>
+                            <div class="col-3"><span class="ms-3">08:30pm</span></div>
+                            <div class="col-3">Haritha</div>
+                            <div class="col-3"><span class="me-4">Kuniyamuthur</span></div>
+                        </button>
+                        <h2 class="accordion-header p-2 p-lg-3" id="headingTwo">
+                            <button class="collapsed p-0 bg-transparent border-0 dwn-arow" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree"><i
+                                    class="fa-solid fa-caret-down fa-bounce position-absolute aro"
+                                    style="color: #ffffff;"></i>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseThree" class="accordion-collapse collapse bg-danger" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body px-0 pt-3 pb-0">
+                            <button class="w-100 fs-6 d-flex text-center border-0 txt-small pt-1 dwn-content-top" type="text">
+                                <div class="col-3"><b class="ms-4">DRIVER</b></div>
+                                <div class="col-3"><b class="ms-3">CAR NO</b></div>
+                                <div class="col-3"><b>DESTINATION</b></div>
+                                <div class="col-3"><b class="me-4">STATUS</b></div>
+                            </button>
+                            <button class="w-100 fs-6 d-flex text-center border-0 txt-small pb-1 dwn-content" type="text">
+                                <div class="col-3"><span class="ms-4">Perumal</span></div>
+                                <div class="col-3"><span class="ms-3">TN38CM1847</span></div>
+                                <div class="col-3">Siruvani</div>
+                                <div class="col-3"><span class="me-3">Rejected <i
+                                            class="fa-regular fa-circle-xmark fa-fade"
+                                            style="color: #ff0000;"></i></span></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 88,
+                    "density": {
+                        "enable": true,
+                        "value_area": 700
+                    }
+                },
+                "color": {
+                    "value": ["#ffffff", "#ffffff", "#ffffff", "#ffffff"]
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 15
+                    }
+                },
+                "opacity": {
+                    "value": 1,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1.5,
+                        "opacity_min": 0,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 1.8,
+                    "random": false,
+                    "anim": {
+                        "enable": true,
+                        "speed": 2,
+                        "size_min": 0.15,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 110,
+                    "color": "#33b1f8",
+                    "opacity": 0.25,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1.6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 10,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 900,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 1,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 100,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 5
+                    },
+                    "remove": {
+                        "particles_nb": 6
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);; F
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDES TABLE</title>
+    <link rel="stylesheet" href="./assets/NewTable.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- fontawsomre -->
+    <script src="https://kit.fontawesome.com/91232b44e6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="rides">
+        <div class="container">
+            <div class="row mt-5 p-3">
+                <table class="table table-dark table-hover table-responsive text-center">
+                    <thead>
+                        <tr class="">
+                            <h3>
+                                <button class="w-100 fs-6 d-flex text-center p-2 border-0 bg-transparent" type="text"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="col-3"><b>DATE</b></div>
+                                    <div class="col-3"><b>TIME</b></div>
+                                    <div class="col-3"><b>USER</b></div>
+                                    <div class="col-3"><b>PICKUP</b></div>
+                                </button>
+                            </h3>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion-item text-center">
+                    <button class="w-100 fs-6 d-flex text-center border-0 bg-transparent txt-small py-2" type="text">
+                        <div class="col-3"><span class="ms-4">21/09/2023</span></div>
+                        <div class="col-3"><span class="ms-3">01:30pm</span></div>
+                        <div class="col-3">Harsha</div>
+                        <div class="col-3"><span class="me-4">Sennanur</span></div>
+                    </button>
+                    <h2 class="accordion-header p-2 p-lg-3" id="headingTwo">
+                        <button class="collapsed p-0 bg-transparent shadow-none dwn-arow" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                        </button>
+                    </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body px-0 pt-3 pb-0">
+                            <button class="w-100 fs-6 d-flex text-center border-0 txt-small pt-1" type="text">
+                                <div class="col-3"><b class="ms-4">DRIVER</b></div>
+                                <div class="col-3"><b class="ms-3">CAR NO</b></div>
+                                <div class="col-3"><b>DESTINATION</b></div>
+                                <div class="col-3"><b class="me-4">STATUS</b></div>
+                            </button>
+                            <button class="w-100 fs-6 d-flex text-center border-0 txt-small pb-1" type="text">
+                                <div class="col-3"><span class="ms-4">David</span></div>
+                                <div class="col-3"><span class="ms-3">TN37BM2002</span></div>
+                                <div class="col-3">Ooty</div>
+                                <div class="col-3"><span class="me-3">Accepted <i class="fa-regular fa-circle-check fa-shake" style="color: #00e650;"></i></span></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
